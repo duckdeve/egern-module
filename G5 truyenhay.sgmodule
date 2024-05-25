@@ -1,0 +1,8 @@
+#!name=G5 Comic
+#!desc=unlock G5 free coin
+[Script]
+G5 hoàngfuck = type=http-response,pattern=https://mhvn\.truyensieuhay\.com/api/thanhvien/getInfoResetNew\?userid\=,requires-body=1,max-size=0,script-path=scripts/langkhach/g5ttg.js
+#G5 4dai = type=http-response,pattern=https:\/\/mhvn\.truyensieuhay\.com\/api\/thanhvien\/getInfoResetNew\?userid=[a-f0-9]+,requires-body=1,max-size=0,script-path=scripts/langkhach/tokeng5.js
+#G5 minhnhut = type=http-response,pattern=https:\/\/mhvn\.truyensieuhay\.com\/api\/thanhvien\/getInfoResetNew\?userid=[a-f0-9]+,requires-body=1,max-size=0,script-path=scripts/langkhach/minhnhutg5.js
+[MITM]
+hostname= %APPEND% mhvn.truyensieuhay.com
